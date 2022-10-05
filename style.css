@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+}
+
+.blue-bg {
+  position: fixed;
+  background: url(https://live.staticflickr.com/1656/26031883676_182191d803_b.jpg);
+  background-size: cover;
+  background-color: #58aff6;
+  top: 0;
+  height: 400px;
+  width: 100vw;
+  z-index: -1;
+  overflow-x: hidden;
+}
+
+.white-bg {
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  min-height: 500px;
+  margin: 210px 0px;
+  width: 100vw;
+  height: 100vh;
+  transform: skewY(5deg);
+  z-index: -1;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  margin: 250px 10vw;
+  max-width: 60vw;
+  background-color: transparent;
+}
+
+.shadow {
+  box-shadow: -2px -5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+#logo{
+    margin-left: 20px;
+    font-family: Impact;
+    font-size: 30px;
+    color: #fff;
+}
+
+  #form {
+    color: rgb(10, 2, 2);
+    padding: 30px;
+    margin-left: 5px;
+    text-align: left;
+    font-size: 16px;
+    font-family: verdana;
+    margin-bottom: 7px;
+    margin-bottom: 7px;
+    height: 30px;
+
+
+}
+#seccion{
+    font-size: 16px;
+    font-family: Open Sans;
+    color:blueviolet;
+    list-style: none;
+}
+
+#boton{
+color:blueviolet;
+font-family: lucida Sans;
+
+height: 30px;
+}
+#botones{
+  color:blueviolet;
+align-items: center;
+  font-family: lucida Sans;
+}
+
+#formulario {
+  background-color: blueviolet;
+  font-size: 20px;
+  font-family: Verdana;
+  padding: 15px;
+}
+
+
+
+#cards {
+  display: flex;
+  display: inline-block;
+  margin: 8px;
+  max-width: 300px;
+  position: relative;
+  text-align: left;
+
+}
+
+#paquetes{
+   padding: 20px;
+   margin-top: 15px;
+   margin: 8px;
+   text-align: center;
+   font-size: 16px;
+}
+#card__image{
+  display: flex;
+  display: inline-block;
+  flex-direction: row;
+  width: 250px;
+}
+.h1{
+  font-size: 24px;
+  font-family: Impact;
+  margin-left: 15px;
+}

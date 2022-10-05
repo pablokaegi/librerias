@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norte Viajes</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div>
+            <p id="logo">Norte Viajes S.A.</p>
+        </div>
+    </div>
+    <nav id="navbar">
+        <form action="" id="form">Ingresa los datos de tu destino para calcular el precio neto <br>
+            <input type="text" name="lugar" id="lugar" placeholder="Ingrese su destino">
+            <input type=" number" name="pasajeros" id="pasajeros" placeholder="pasajeros">
+            <button id="boton" type="submit" >
+                  Calcular Costo Neto
+            </button>
+        </form>
+    </nav>
+    <div id="form"></div>
+    <div class="blue-bg"></div>
+<div class="white-bg shadow"></div>
+<div class="content">
+  <h1>Viajes y Experiencias</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin magna ex, elementum id convallis eu, elementum id justo. Maecenas dictum sagittis leo, ut ultrices risus mollis vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+    eu lectus felis. Vivamus eget velit erat. Vivamus condimentum augue sed lacus viverra imperdiet. Etiam quis lectus non libero hendrerit porta. In sit amet molestie lacus. Praesent ultricies, lectus eget porta porttitor, sem sapien facilisis arcu,
+    eu tincidunt nulla odio ac ipsu.</p>
+
+  <p>Praesent eu arcu convallis, faucibus turpis eu, rutrum nisi. Integer rutrum ipsum at aliquam consequat. In dignissim lorem nibh, nec iaculis est fermentum vitae. Maecenas sodales, nunc eget lacinia volutpat, nibh mi lobortis leo, id varius urna tellus
+    ut magna. Sed porttitor nunc et luctus efficitur. Nam sit amet congue nulla. Praesent dapibus erat arcu, at scelerisque arcu faucibus vel. Morbi blandit venenatis elit. Nam feugiat bibendum suscipit. Donec viverra eu lorem eu venenatis. Nullam posuere
+    nulla id libero rutrum venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam molestie ac velit vel blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+    egestas.</p>
+    <section id="seccion">
+        <h2>Destinos disponibles</h2>
+        <li>
+            <ul>Bariloche a tan solo $70000</ul>
+            <div id="cards">
+                    <img id="card__image" src="./fotos/istockphoto-638903206-612x612.jpg" alt="wave" />
+              </div>
+            <div>
+                <button id="boton1" type="submit">
+                   Agregar al carrito
+                </button>
+            </div>
+            <ul>Catamarca a $50000</ul>
+            <div>
+                <div id="cards">
+                    <img id="card__image" src="./fotos/cerros.jpg" alt="wave" />
+              </div>
+            <br/>
+                <button id="boton2" type="submit">
+                   Agregar al carrito
+                </button>
+            </div>
+            <ul>Cataratas a $45000</ul>
+            <div id="cards">
+                <img id="card__image" src="./fotos/1455541057_328685_1455548199_album_normal.jpg" alt="wave" />
+          </div>
+            <div>
+                <button id="boton3" type="submit">
+                   Agregar al carrito
+                </button>
+            </div>
+        </li>
+    </section>
+   
+
+      <form id="Filtro">
+        <input type="text" name="buscar destino por precio" id="filtro" placeholder="filtrar lugares por precio" />
+        <input type="submit" value="Enviar" />
+      </form>
+     <div id="filtro"></div>
+      <div id="contenedor"></div>
+</div>
+
+
+        
+    <script src="./index.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js">
+    </script>
+    
+</body>    
+</html>
