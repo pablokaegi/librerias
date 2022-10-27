@@ -1,32 +1,3 @@
-const lugares = [
-    {lugar:"cataratas", precio: 45000},
-    {lugar: "bariloche", precio:70000},
-    {lugar: "catamarca", precio: 55000},
-]
-localStorage.setItem("lugares",JSON.stringify(lugares));
-
-
-/*Agregar al carrito viajes*/
-
-let boton1=document.getElementById('boton1');
-boton1.addEventListener('click', () => {
-Swal.fire({
-    title: 'Está seguro que quiere agregar el paquete a su carrito?',
-    icon: 'warning',
-    showCancelButton: true,
-    confirmButtonText: 'Sí, seguro',
-    cancelButtonText: 'No, no quiero'
-}).then((result) => {
-
-    if (result.isConfirmed) {
-        Swal.fire({
-            title: 'Estas muy cerca de conseguir tu viaje favorito!',
-            icon: 'success',
-            text: 'Solo falta un paso más'
-        })
-    }
-})
-})
 
 
 let boton2=document.getElementById('boton2');
@@ -113,7 +84,6 @@ function calcularViaje(lugar, pasajeros) {
 }
 
 
-
 function mostrarPrecioViaje(){
     calcularViaje(
         lugar,
@@ -122,3 +92,16 @@ function mostrarPrecioViaje(){
 }
 
 boton.addEventListener("click", mostrarPrecioViaje);
+
+ // Crea un mapa y inicializa su posición y escala
+ var map = L.map('miMapa').setView([39.57, 3.0], 8);
+
+ // Crea capa openstreetmap y la añade al mapa
+ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+   attribution: '&copy <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors'
+ }).addTo(map);
+
+ // Crea control de escala y lo añade al mapa
+ L.control.scale({
+   imperial: false
+ }).addTo(map);

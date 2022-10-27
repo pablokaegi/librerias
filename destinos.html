@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+    <title>Norte Viajes</title>
+    <script src="./js/destinos.js"></script>
+    
+
+</head>
+
+<body>
+    <header class="container-fluid m-0 p-0">
+        <div class="row m-auto">
+            <div class="col-12 col-md-4 p-0 header__logo">
+                <a href="index.html">
+                    <img src="./fotos/LOGO1.png" alt="" class="logoMenu img-fluid">
+                </a>
+            </div>
+
+            <div class="col-12 col-md-8 p-0">
+                <div class="menu-button" id="openBtn2">
+                    <i class="fa fa-plane"></i>
+                </div>
+                <div class="menu-wrap">
+                    
+                    <nav class="menu">
+                        <div class="icon-list">
+                            <div class="total">
+                                <h4 class="sub"> Resumen: </h4>
+                                <div id="listaViaje"></div>
+
+                                <h4 class="sub2"> Total: </h4>
+                                <div id="sumaTotal"></div>
+
+                                <button type="button" id="btnComprarViaje" class="btn botonComprar" data-toggle="modal"
+                                    data-target="#exampleModalCenter">Pagar </button>
+
+                            </div>
+                        </div>
+                        <button class="close-button" id="close-button">X</button>
+                    </nav>
+                </div>
+
+
+                <nav class="navbar navbar-expand-lg">
+                    <div class="menuLg" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="destinos.html" role="button" aria-haspopup="true"
+                                    aria-expanded="false">Destinos</a>
+                            </li>
+                          
+                        </ul>
+                    </div>
+                  
+
+            <div class="col-12 col-md-3">
+                <div class="fondoForm">
+                    <form class="form__viaje" id="comprarViaje">
+                        <div class="form-group">
+                            <label for="destino">Pais</label>
+                            <select class="form-control select" id="pais">
+                                <option value="">-- Seleccionar --</option>
+                            </select>
+
+                            <label for="destino">Destino</label>
+                            <select class="form-control select" id="destino">
+                                <option value="">-- Seleccionar --</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="start">Fecha Ida:</label>
+
+                            <input type="date" id="start" name="trip-start" value="" min="2021-01-01" max="2022-12-31">
+                        </div>
+                        <div class="form-group">
+                            <label for="start">Fecha Vuelta:</label>
+
+                            <input type="date" id="end" name="trip-start" value="" min="2021-01-01" max="2022-12-31">
+                        </div>
+                        <div class="form-group">
+                            <label for="pasajeros">Cantidad de Pasajeros</label>
+                            <input type="number" min="0" placeholder="0" class="form-control" id="pasaj">
+                        </div>
+                        <div class="form-group">
+                            <label for="categoria">Categoria</label>
+                            <select class="form-control select" id="selectCategoria">
+                                <option value="">-- Seleccionar --</option>
+                                <option value="Classic">Classic</option>
+                                <option value="Business">Business</option>
+                            </select>
+                        </div>
+                    </form>
+                    <button type="submit" class="btn botonComprar2" id="btnCalcular">Calcular Viaje</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div id = 'map'>
+    </div>
+    <footer class="container-fluid m-0 p-0">
+        <div class="row m-0">
+            <div class="col-12 col-md-6 p-4 footerTexto">
+                <h3>Norte Viajes S.A.</h3>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+        <script src="./js/index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+        <script src="./js/destinos.js"></script>
+        
+
+</body>
+
+</html>
